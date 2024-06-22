@@ -14,12 +14,15 @@
      * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
      }
      body {
       background-color: hsl(30, 54%, 90%);
       color: hsl(24, 5%, 18%);
-      display: flex; 
+      display: flex;
+      flex-direction: column;
       width: 100%;
+      height: 100%;
       justify-content: center;
       align-items: center;
      }
@@ -96,7 +99,13 @@
      }
      strong {
       color: hsl(30, 10%, 34%);
-     } 
+     }
+     footer {
+      background-color: hsl(30, 54%, 90%);
+      color: hsl(0, 0%, 7%);
+      text-align: center;
+      font-weight: 500;
+     }
 
      @media (max-width: 375px) {
       body {
@@ -186,6 +195,10 @@
         </tbody>
       </table>
     </article>
-  </header> 
+  </header>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">UTHRA G</a>.
+  </footer>
 </body>
 </html>
