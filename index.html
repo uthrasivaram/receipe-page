@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,21 +20,23 @@
       background-color: hsl(30, 54%, 90%);
       color: hsl(24, 5%, 18%);
       display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
+      flex-direction: column; 
+      width: 100%; 
+      height:100%;
       justify-content: center;
       align-items: center;
      }
      .container {
       font-family: "Outfit", sans-serif;
       border-radius: 10px;
-      background-color: hsl(0, 0%, 100%);
-      width: 50%;
+      background-color: hsl(0, 0%, 100%); 
+      max-width: 600px;
+      display:flex;
+      flex-direction: column; 
       margin: 30px;
       padding: 20px;
      }
-     img {
+    img {
       width: 100%;
       object-fit: fill;
       border-radius: 10px;
@@ -66,13 +68,13 @@
       font-family: "Young Serif";
       font-weight: 400 !important;
      }
-     h3 {
+     h2 {
       padding-top: 15px;
       color: hsl(14, 45%, 36%);
       font-family: "Young Serif";
       font-weight: 400 !important;
      }
-     h4 {
+     h3 {
       color: hsl(332, 51%, 32%);
      }
      table {
@@ -99,15 +101,15 @@
      }
      strong {
       color: hsl(30, 10%, 34%);
-     }
+     }  
      footer {
       background-color: hsl(30, 54%, 90%);
-      color: hsl(0, 0%, 7%);
+      color:hsl(332, 51%, 32%);
       text-align: center;
       font-weight: 500;
      }
 
-     @media (max-width: 375px) {
+     @media (max-width: 450px) {
       body {
         display: block;
         background-color: hsl(30, 54%, 90%);
@@ -119,31 +121,38 @@
         margin: 0;
         padding: 0;
         width: 100%;
+        border-radius: 0px;
       }
-      article {
+      main {
         padding: 20px;
       }
+      footer {
+       width:100%;
      }
+     img { 
+      border-radius: 0px;
+     }
+    }
   </style>
 </head>
 <body>
   <header class="container">
     <img src="assets/images/image-omelette.jpeg" alt="image omelette">
-    <article>
+    <main>
       <h1>Simple Omelette Recipe</h1>
       <p>
         An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
         to perfection, optionally filled with your choice of cheese, vegetables, or meats.
       </p>
       <section class="instruction">
-        <h4>Preparation time</h4>
+        <h3>Preparation time</h3>
         <ul>
           <li><strong>Total:</strong> Approximately 10 minutes</li>
           <li><strong>Preparation:</strong> 5 minutes</li>
           <li><strong>Cooking:</strong> 5 minutes</li>
         </ul>
       </section>
-      <h3>Ingredients</h3>
+      <h2>Ingredients</h2>
       <ul>
         <li>2-3 large eggs</li>
         <li>Salt, to taste</li>
@@ -152,7 +161,7 @@
         <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
       </ul>
       <hr>
-      <h3>Instructions</h3>
+      <h2>Instructions</h2>
       <ol>
         <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
           You can add a tablespoon of water or milk for a fluffier texture.
@@ -172,7 +181,7 @@
           Serve hot, with additional salt and pepper if needed.
         </li>
       </ol>
-      <h3>Nutrition</h3>
+      <h2>Nutrition</h2>
       <p class="space-top">The table below shows nutritional values per serving without the additional fillings.</p>
       <table>
         <tbody>
@@ -194,11 +203,10 @@
           </tr>
         </tbody>
       </table>
-    </article>
+    </main>
   </header>
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">UTHRA G</a>.
+    <p>Challenge by <strong>Frontend Mentor.</strong> Coded by <strong>UTHRA GANESH</strong>.</p>
   </footer>
 </body>
 </html>
